@@ -1,0 +1,20 @@
+blueiris:
+  host: "192.168.1.100"
+  port: 81
+  username: "admin"
+  password: "your_password"
+  camera_name: "cam1"
+
+hailo:
+  model_path: "/path/to/your/model.hef"
+  confidence_threshold: 0.5
+  nms_threshold: 0.45
+  input_size: [640, 640]
+
+processing:
+  poll_interval: 1.0
+  output_dir: "output"
+  save_images: true
+  save_detections: true
+  draw_boxes: true
+  webhook_url: null
